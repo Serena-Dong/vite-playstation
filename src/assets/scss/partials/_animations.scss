@@ -1,0 +1,22 @@
+a:hover {
+    color: #b4b4b4;
+    border-color: #b5b5b5;
+}
+
+.nav-actions ul li>*:hover {
+    color: #00439c;
+}
+
+#btn-login:hover {
+    background-color: #464646 !important;
+}
+
+.btn-red:hover {
+    background-color: #ff4444 !important;
+}
+
+.btn-blue:hover,
+.btn-white:hover {
+    background-color: #0051bb !important;
+    color: #FFFFFF !important;
+}
