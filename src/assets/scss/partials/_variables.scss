@@ -4,3 +4,48 @@ $ps-black: #000000;
 
 $ps-blue: #00439c;
 $ps-grey: #808080;
+$ps-grey-dark: #1b1b1b;
+$ps-red: #ff0000;
+
+$ps-black-hover: #464646;
+
+$ps-blue-hover: #0051bb;
+$ps-grey-hover: #b4b4b4;
+$ps-red-hover: #ff4444;
+
+
+// 
+.bg-blue {
+    background-color: $ps-blue;
+}
+
+.bg-white {
+    background-color: $ps-white;
+}
+
+.bg-black {
+    background-color: $ps-black;
+}
+
+.bg-grey {
+    background-color: $ps-grey;
+}
+
+.text-blue {
+    color: $ps-blue;
+}
+
+.text-white {
+    color: $ps-white;
+}
+
+.text-black {
+    color: $ps-black;
+}
+
+.text-grey {
+    color: $ps-grey;
+}
+
+// Jumbotron
+$jumbotron-image: url("/img/it-takes-two-hero-banner-desktop.jpg");
