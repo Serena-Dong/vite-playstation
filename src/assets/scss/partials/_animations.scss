@@ -1,22 +1,21 @@
 a:hover {
-    color: #b4b4b4;
-    border-color: #b5b5b5;
+    color: $ps-grey-hover;
 }
 
 .nav-actions ul li>*:hover {
-    color: #00439c;
+    color: $ps-blue-hover ;
 }
 
-#btn-login:hover {
-    background-color: #464646 !important;
+.btn-black:hover {
+    background-color: $ps-black-hover !important;
 }
 
 .btn-red:hover {
-    background-color: #ff4444 !important;
+    background-color: $ps-red-hover !important;
 }
 
 .btn-blue:hover,
 .btn-white:hover {
-    background-color: #0051bb !important;
+    background-color: $ps-blue-hover !important;
     color: #FFFFFF !important;
 }
