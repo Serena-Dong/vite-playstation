@@ -1,38 +1,233 @@
 const headerData = {
-    navbar: ['Games', 'PS5', 'PS4', 'Services', 'Accessories', 'News', 'Store', 'Supports']
-}
-const mainData = {
-    cardV: [
-        {
-            img: 'https://s3-alpha-sig.figma.com/img/f636/ae98/6753676709d3eb29e2409bc0d7d8ecda?Expires=1687132800&Signature=gTjClqypYK9DouiGDIcrPUsTPtHLf80Evlp6siaksRGIPGroJBWwQJJNwQeDQHgy6FXZGTkM8NKTLg0bwAwWJU7U-hSMHzjVCMeKG71kgX4XaEesJtFDoAGHugJ3svM5p6Y7Blcg~dK6cqh0GdCxkLkcPE~b-ckYTiiPqbi0Nh31CY0KRLHXGof1KTR745dqsAlhioZI0OJuA-9DtA8Deb80ChjgO8qZWQ0UrTFtWWXU1qUYzKh089LfU9l1vs7AaXYlpq13ePQeytob9HUfL9R9ZV1T3iL2ZwXGFpte-GL0lKA9bGAOAoLJS2SgNksfdNq9w4cgmYcnd2jTqze9AQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
-            title: 'Sed viverra nisl ac ex euismod',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra nisl ac ex euismods it amet porta quam consectetur',
-
-        },
-        {
-            img: 'https://s3-alpha-sig.figma.com/img/4bfe/688e/873a579a769527ec884faf586991d5d5?Expires=1687132800&Signature=AYUl2VsrRou7Hff4Wz5d6mkkY1AY~EfmkAj8EZpPJoid4wtmSSzzEw4S1iZi4WpJxfykPpRcRhtb4K33ygWXORjxP3nbb1t2NLaiyGKSJ1ZhQ4TZEMJ8cLXAO8hkWWZz5kDeW2lmtCC5uVQapPTrKt-GajPHSdg-8Y22oWNrLtOL7cjcHiNORGYVN4ekLNKYVe0jzUrGDBmB7sF1fREFxQHfxkBrno4N6hVMIHKNqrxkfVb5GmkxvKx-AEhah~IST~Srhjxluoj1N3egKC~3xgFI6snt4boxP1MokZdRKLIDxMpz2cLqfGTlEKTud9h48aFPYJrSNIthmXXH-R-DgA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
-            title: 'Sed viverra nisl ac ex euismod',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra nisl ac ex euismods it amet porta quam consectetur',
-
-        },
-
-    ],
-    cardH:
-        [
+    headerTop: {
+        image: "/img/sony_logo.svg"
+    },
+    navbar: {
+        image: "/img/play_logo.svg",
+        links: [
             {
-                img: 'https://s3-alpha-sig.figma.com/img/a30d/4930/ee517eba7af80c10c84d64462f350cf3?Expires=1687132800&Signature=oZ3cnjr44Lj-D2BRT6ER4ugfUOp41eS6uYU~fUcXqySRuDI8wtsofmz39SoDkwlve9nJcdKTohfsZk48SKZ89PFUJM0T1LrMVya9qz8SsBNr6FZJuoILm0U-KGJu14JFsCEUS~B6MPbIhBs1-cQ1pBKRCNBCNfizeiL6UrGorSbq-nkTgPGTEPPPL3VjuZpXiVxVAzLNc~8JPK6zddl5ehCvC9RZz7UPPue9Z0SEffIBkS2iB~IeOEPZ27Z9WLHuz3BljWaDsY0Sh99Y54wnWM40EGrdaoBJ4DBp8FSmK8UdyNAdSP8ElOl~-vqkTmsgDHW--gbJr64T~2-WVpZEBQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
-                title: 'Sed viverra nisl ac ex euismod',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra nisl ac ex euismods it amet porta quam consectetur',
-
+                name: "Games",
+                url: "#"
             },
             {
-                img: 'https://s3-alpha-sig.figma.com/img/0065/2810/95214d64ec7c9888a77901303bf0a126?Expires=1687132800&Signature=C9rpkxRTt-4ICE5rBcQOjESq5m-5oFVeR~uPr8aPwnwillb7kT-ZUh~lWVsdKYwEU2dh8xrDGNFSXGoPlO7JFHit7TUYVBtRoCZ0TOxBPMRX-5LcKMBJvT9xJkdI9b2FXOx6vrfi2ssNaLoxmNNQ13PRQwbw0q8Pz-KrEwBIGwRJ~bGen9wHUdFrsLh8CQlquDjfvtrZfnkgy8nae5GjEyo6r12AMJTupUXr1FfN8AfLqXLgq0k2OwG3IbfpdFs6UAyv9Ikuyfnf87QhsDAN7pVvRRW2invh26wwhjyGaHHoj9VQOK9sawbaC-tO6KToiZFjE4IPAnTr61iq0IBh8g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
-                title: 'Sed viverra nisl ac ex euismod',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra nisl ac ex euismods it amet porta quam consectetur',
+                name: "PS5",
+                url: "#"
+            },
+            {
+                name: "PS4",
+                url: "#"
+            },
+            {
+                name: "Services",
+                url: "#"
+            },
+            {
+                name: "Accessories",
+                url: "#"
+            },
+            {
+                name: "News",
+                url: "#"
+            },
+            {
+                name: "Store",
+                url: "#"
+            },
+            {
+                name: "Supports",
+                url: "#"
+            }
+        ],
+        buttons: [
+            {
+                text: "Login",
+                color: "btn-black",
+                url: "#"
+            }
+        ]
+    },
+}
 
+const mainData = {
+    banners: [
+        {
+            order: "order-2",
+            logo: "/img/ps-plus-logo.png",
+            description: "Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online, giochi mensili, sconti esclusivi e altro ancora.",
+            img: "/img/ps-plus-april-monthly-games-featured-image-block.png",
+            bgColor: "bg-secondary",
+            color: "text-black",
+            button: [
+                {
+                    text: "Esplora PlayStation Plus",
+                    color: "btn-white",
+                    url: "#"
+                }
+            ]
+        },
+        {
+            order: "order-4",
+            logo: "/img/ps-now-logo-two-column.png",
+            description: "Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4, PS3 e PS2 su PS4 o PC Windows, con nuovi titoli aggiunti ogni mese.",
+            img: "/img/ps-now-april-featured-image-block.png",
+            bgColor: "bg-blue",
+            color: "text-white",
+            button: [
+                {
+                    text: "Esplora PlayStation Now",
+                    color: "btn-white",
+                    url: "#"
+                }
+            ]
+        }
+    ],
+    containers: [
+        {
+            order: "order-1",
+            title: "Esplora la PlayStation 4 ",
+            intro: "Giochi incredibili e intrattenimento senza fine. Non c'è mai stato un momento migliore per giocare sulla tua PS4.",
+            cards: [
+                {
+                    img: "/img/ps4-slim-homepage-image-block.jpg",
+                    title: "PlayStation 4",
+                    description: "Giochi incredibili live su PS4, con 1 TB di spazio di archiviazione.",
+                    button: [
+                        {
+                            text: "Scopri di più",
+                            color: "btn-blue",
+                            url: "#"
+                        }
+                    ]
+                },
+                {
+                    img: "/img/ps4-slim-homepage-image-block.jpg",
+                    title: "PlayStation 4",
+                    description: "Giochi incredibili live su PS5, con 1 TB di spazio di archiviazione.",
+                    button: [
+                        {
+                            text: "Scopri di più",
+                            color: "btn-blue",
+                            url: "#"
+                        }
+                    ]
+                },
+                {
+                    img: "/img/ps4-slim-homepage-image-block.jpg",
+                    title: "PlayStation 4",
+                    description: "Giochi incredibili live su PS4, con 1 TB di spazio di archiviazione.",
+                    button: [
+                        {
+                            text: "Scopri di più",
+                            color: "btn-blue",
+                            url: "#"
+                        }
+                    ]
+                }
+            ]
+
+        },
+        {
+            order: "order-3",
+            title: "Nuovi sconti sul PlayStation Store",
+            intro: "Sconti pazzeschi, collezioni curate e saldi stagionati su PS5, PS4 e PS VR, tutti in un unico posto.",
+            images: [
+                {
+                    path: "/img/playstation-store-games-under-20-spotlight.jpg"
+                },
+                {
+                    path: "/img/playstation-store-golden-week-sale-spotlight.jpg"
+                },
+                {
+                    path: "/img/playstation-store-free-to-play-spotlight.png"
+                }
+            ]
+        },
+        {
+            order: "order-5",
+            title: "Seguici sui social media",
+            images: [
+                {
+                    path: "/img/twitter.jpg"
+                },
+                {
+                    path: "/img/facebook.jpg"
+                },
+                {
+                    path: "/img/instagram.jpg"
+                },
+                {
+                    path: "/img/youtube.png"
+                }
+            ]
+        },
+    ],
+    newRealese: {
+        title: "Nuove uscite",
+        description: "Giochi incredibili per PS4 e PS5 disponibili ora",
+        games: [
+            {
+                title: "Tom Hakw's&trade; Pro Skater&trade; 1+2",
+                img: "/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+            },
+            {
+                title: "Crash Bandicoot 4: It's About Time",
+                img: "img/crash-bandicoot-4-its-about-time-store-art.jpg"
+            },
+            {
+                title: "Tom Hakw's&trade; Pro Skater&trade; 1+2",
+                img: "/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+            },
+            {
+                title: "Crash Bandicoot 4: It's About Time",
+                img: "img/crash-bandicoot-4-its-about-time-store-art.jpg"
+            },
+            {
+                title: "Tom Hakw's&trade; Pro Skater&trade; 1+2",
+                img: "/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+            },
+            {
+                title: "Crash Bandicoot 4: It's About Time",
+                img: "img/crash-bandicoot-4-its-about-time-store-art.jpg"
+            },
+            {
+                title: "Tom Hakw's&trade; Pro Skater&trade; 1+2",
+                img: "/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+            },
+            {
+                title: "Crash Bandicoot 4: It's About Time",
+                img: "img/crash-bandicoot-4-its-about-time-store-art.jpg"
+            },
+            {
+                title: "Tom Hakw's&trade; Pro Skater&trade; 1+2",
+                img: "/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+            },
+            {
+                title: "Crash Bandicoot 4: It's About Time",
+                img: "img/crash-bandicoot-4-its-about-time-store-art.jpg"
+            },
+            {
+                title: "Tom Hakw's&trade; Pro Skater&trade; 1+2",
+                img: "/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+            },
+            {
+                title: "Crash Bandicoot 4: It's About Time",
+                img: "img/crash-bandicoot-4-its-about-time-store-art.jpg"
             },
 
         ]
+    },
+    jumbotron: {
+        logo: "/img/it-takes-two-logo.png",
+        title: "Un'avventura cooperativa selvaggai ti attende",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem deleniti molestias, quo sequi sint minima laboriosam eum, impedit inventore tenetur quas repudiandae quam perspiciatis. Nostrum ea beatae voluptatibus alias aut.",
+        button: [
+            {
+                text: "Acquista ora",
+                color: "btn-red",
+                url: "#"
+            }
+        ]
+    }
 }
 
 

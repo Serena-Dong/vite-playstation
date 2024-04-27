@@ -1,36 +1,57 @@
 <script>
+import Button from './Button.vue';
+
 export default {
-    name: 'Jumbotron'
+    name: 'Jumbotron',
+    components: { Button },
+    props: {
+        jumbotron: Array
+    }
 }
 </script>
 <template>
-    <section class="jumbotron text-white p-5 d-flex align-items-end">
+    <section class="jumbotron">
         <div class="container-sm">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="text">
-                        <img class="img-fluid mb-3" src="./../../assets/img/returnal-hero-banner-logo.png" alt="">
-                        <p class="title mb-4">Rompi il cerchio</p>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa, totam
-                            saepe veniam eum sunt omnis, in illum quisquam minus consequuntur libero id repellat?
-                            Placeat.</p>
-                        <a class="btn btn-red bg-danger">
-                            Acquista ora
-                        </a>
+                    <div class="jumbotron-content">
+                        <img :src="jumbotron.logo" alt="">
+                        <p>{{ jumbotron.title }}</p>
+                        <p>{{ jumbotron.description }}</p>
+                        <Button :button="jumbotron.button"></Button>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
+
 </template>
 <style scoped lang="scss">
+@import "./../../assets/scss/partials/variables";
+
 .jumbotron {
     height: 600px;
-
-    background-image: url('./../../assets/img/jumbo-bg.png');
+    background-image: $jumbotron-image;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 3rem;
+
+    margin: 0 !important;
+
+    .jumbotron-content {
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        img {
+            margin-bottom: 1.25rem;
+            width: 50%;
+        }
+    }
 }
 </style>
