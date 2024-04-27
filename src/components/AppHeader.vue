@@ -1,11 +1,13 @@
 <script>
 import { headerData } from '../data/data';
+import Button from './contents/Button.vue';
 
 export default {
     name: 'AppHeader',
+    components: { Button },
     data() {
         return {
-            headerData
+            header: headerData
         }
     },
 }
@@ -14,48 +16,58 @@ export default {
 <template>
     <header>
 
-        <!-- Logo SONY -->
-        <div class="logo">
+        <!-- Header Top -->
+        <div class="header-top">
             <div class="container-sm">
                 <div class="logo d-flex justify-content-end align-items-center">
-                    <a href=""><img class="logo-header-img" src="./../assets/img/sony_logo.svg" alt=""></a>
+                    <a href=""><img class="logo-header-img" :src="header.headerTop.image" alt=""></a>
                 </div>
             </div>
         </div>
 
-        <!-- Navbar -->
-        <div class="navbar">
+        <!-- Header Bottom -->
+        <div class="header-bottom">
             <div class="container-sm">
-                <div class="d-flex w-100 justify-content-between align-items-center">
+                <!-- Navbar -->
+                <div class="navbar d-flex w-100 justify-content-between align-items-center">
 
                     <!-- Navbar Left -->
-                    <div class="col-1 col-xxl-8 d-flex">
+                    <div class="navbar-left col-1 col-xxl-8 d-flex">
                         <!-- Logo -->
-                        <a href=""><img class="logo-navbar-img pt-1" src="./../assets/img/play_logo.svg" alt="">
+                        <a href="">
+                            <img class="navbar-logo pt-1" :src="header.navbar.image" alt="">
                         </a>
                         <!-- Nav-actions -->
                         <div class="nav-actions align-items-center">
                             <ul class="text-black d-flex align-items-center">
-                                <li v-for="link in headerData.navbar">
-                                    <a href="#">{{ link }} <i class="fa-solid fa-chevron-down text-secondary"></i></a>
+                                <li v-for="link in header.navbar.links">
+                                    <a :href="link.url">{{ link.name }} <i
+                                            class="fa-solid fa-chevron-down text-secondary"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Navbar Right -->
-                    <div class="col-2 col-lg-1 col-xxl-4">
+                    <div class="navbar-right col-2 col-lg-1 col-xxl-4">
 
                         <!-- Mobile Menù -->
-                        <div class="bars">
+                        <div id="bars">
                             <a href=""><i class="fa-bars fa-solid p-2 px-3 border border-grey rounded-3 fs-3"></i></a>
                         </div>
 
                         <!-- Desktop Menù -->
                         <div class="nav-actions align-items-center justify-content-end">
                             <ul class="d-flex align-items-center">
-                                <li><a href="">My PlayStation <i class="fa-solid fa-chevron-down text-secondary"></i></a></li>
-                                <li><a id="btn-login" href="" class="btn bg-black text-white  mb-0">Accedi</a></li>
+                                <li>
+                                    <a href="">
+                                        My PlayStation
+                                        <i class="fa-solid fa-chevron-down text-secondary"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <Button :button="header.navbar.buttons"></Button>
+                                </li>
                                 <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                             </ul>
                         </div>
@@ -76,30 +88,41 @@ header {
     position: sticky;
     top: 0;
 
-    .logo{
+    .header-top {
         background-color: $ps-black;
-        .logo {
+
+        .logo-header-img {
             height: 40px;
         }
     }
 
-    .navbar{
+    .header-bottom {
         background-color: $ps-white;
 
-        &, .nav-actions{
+        &,
+        .nav-actions {
             height: 80px;
         }
-        
-        .nav-actions ul>* {
-            margin-left: 15px;
-        }
-        
-        .nav-actions ul li>* {
-            color: $ps-black;
-        }
 
-        .bars a {
-            color: $ps-grey;
+        .navbar {
+            .nav-actions ul>* {
+                margin-left: 15px;
+            }
+
+            .nav-actions ul li>* {
+                color: $ps-black;
+            }
+
+            #bars a {
+                color: $ps-grey;
+
+                .fa-bars {
+                    padding: 0.5rme 1rem;
+                    border: 1px solid $ps-grey;
+                    border-radius: 0.5rem;
+                    font-size: 1.75rem;
+                }
+            }
         }
     }
 
