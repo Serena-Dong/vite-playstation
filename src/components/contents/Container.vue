@@ -36,7 +36,7 @@ export default {
             <div v-if="cards" id="card" class="row">
                 <div v-for="card in cards" class="col-12 col-md-4 mb-4">
                     <div class="img-container">
-                        <img class="img-fluid" :src="card.img" alt="">
+                        <img class="img-fluid" :src="'/img/' + card.img" alt="">
                     </div>
                     <p class="title mb-4">{{ card.title }}</p>
                     <p class="mb-4">{{ card.description }}</p>
@@ -47,7 +47,7 @@ export default {
             <!-- IMAGE -->
             <div v-if="images" class="row">
                 <div v-for="image in images" class="col">
-                    <img class=" img-fluid" :src="image.path" alt="">
+                    <img class=" img-fluid" :src="'/img/' + image.path" alt="">
                 </div>
             </div>
         </div>

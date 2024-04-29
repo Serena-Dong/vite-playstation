@@ -5,7 +5,7 @@ export default {
     name: 'Jumbotron',
     components: { Button },
     props: {
-        jumbotron: Array
+        jumbotron: Object
     }
 }
 </script>
@@ -15,8 +15,8 @@ export default {
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="jumbotron-content">
-                        <img :src="jumbotron.logo" alt="">
-                        <p>{{ jumbotron.title }}</p>
+                        <img :src="'/img/' + jumbotron.logo" alt="">
+                        <h2>{{ jumbotron.title }}</h2>
                         <p>{{ jumbotron.description }}</p>
                         <Button :button="jumbotron.button"></Button>
                     </div>
@@ -44,8 +44,12 @@ export default {
     margin: 0 !important;
 
     .jumbotron-content {
-        p {
+        &>* {
             margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
         }
 
         img {

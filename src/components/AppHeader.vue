@@ -20,7 +20,7 @@ export default {
         <div class="header-top">
             <div class="container-sm">
                 <div class="logo d-flex justify-content-end align-items-center">
-                    <a href=""><img class="logo-header-img" :src="header.headerTop.image" alt=""></a>
+                    <a href=""><img class="logo-header-img" :src="'/img/' + header.headerTop.image" alt=""></a>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@ export default {
                     <div class="navbar-left col-1 col-xxl-8 d-flex">
                         <!-- Logo -->
                         <a href="">
-                            <img class="navbar-logo pt-1" :src="header.navbar.image" alt="">
+                            <img class="navbar-logo pt-1" :src="'/img/' + header.navbar.image" alt="">
                         </a>
                         <!-- Nav-actions -->
                         <div class="nav-actions align-items-center">
@@ -87,6 +87,8 @@ export default {
 header {
     position: sticky;
     top: 0;
+
+    z-index: 99999;
 
     .header-top {
         background-color: $ps-black;

@@ -2,7 +2,7 @@
 export default {
     name: 'NewRealese',
     props: {
-        newRealese: Array
+        newRealese: Object
     }
 }
 </script>
@@ -20,7 +20,7 @@ export default {
             <div class="new-realise-main">
                 <div class="row">
                     <div v-for="game in newRealese.games" class="col-6 col-md-4 col-lg-2 mb-4">
-                        <img class="img-fluid rounded-5 mb-2" :src="game.img" alt="">
+                        <img class="img-fluid rounded-5 mb-2" :src="'/img/' + game.img" alt="">
                         <p class="fw-semibold">{{ game.title }}</p>
                     </div>
                 </div>

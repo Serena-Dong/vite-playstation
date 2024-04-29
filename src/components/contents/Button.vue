@@ -2,14 +2,14 @@
 export default {
     name: 'Button',
     props: {
-        button: Array
+        button: Object
     }
 }
 </script>
 
 <template>
-    <div v-for="button in button" class="button">
-        <a :class="[button.color]" class="btn" href="">{{ button.text }}</a>
+    <div class="button">
+        <a :class="'btn-' + [button.color]" class="btn" href="">{{ button.text }}</a>
     </div>
 </template>
 

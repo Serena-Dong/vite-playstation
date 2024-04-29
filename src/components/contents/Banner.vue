@@ -8,7 +8,7 @@ export default {
         order: String,
         logo: String,
         description: String,
-        button: Array,
+        button: Object,
         img: String,
         bgColor: String,
         color: String
@@ -25,7 +25,7 @@ export default {
                 <!-- Banner Text -->
                 <div class="banner-text col-12 col-lg-6">
                     <div class="text py-5">
-                        <img :src="logo" alt="">
+                        <img :src="'/img/' + logo" alt="">
                         <p :class="color">{{ description }}</p>
                         <Button :button="button"></Button>
                     </div>
@@ -33,7 +33,7 @@ export default {
 
                 <!-- Banner Img -->
                 <div class="banner-img col-lg-6 img-none">
-                    <img class="img-fluid" :src="img" alt="">
+                    <img class="img-fluid" :src="'/img/' + img" alt="">
                 </div>
             </div>
         </div>
@@ -49,6 +49,7 @@ export default {
 
         p {
             padding: 3rem 0;
+            margin-bottom: 0;
         }
     }
 }
