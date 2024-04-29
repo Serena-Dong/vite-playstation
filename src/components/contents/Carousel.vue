@@ -35,7 +35,7 @@ export default {
 </script>
 
 <template>
-    <section class="carousel games-carousel products-carousel">
+    <section class="carousel">
         <div class="carousel-container">
             <!-- <div @click="prevImage" id="prev" class="fa-solid fa-arrow-left arrow"></div> -->
             <div class="carousel-gallery">

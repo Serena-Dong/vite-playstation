@@ -4,13 +4,14 @@ import Banner from './contents/Banner.vue';
 import Container from './contents/Container.vue';
 import NewRealese from './contents/NewRealese.vue';
 import Carousel from './contents/Carousel.vue';
+import Products from './contents/Products.vue';
 import { createApp } from 'vue';
 import { mainData } from '../data/data';
 
 
 export default {
     name: 'AppMain',
-    components: { Jumbotron, Banner, Container, NewRealese, Carousel },
+    components: { Jumbotron, Banner, Container, NewRealese, Carousel, Products },
     data() {
         return {
             mainData
@@ -22,6 +23,8 @@ export default {
 <template>
     <main>
         <Carousel :carousel="mainData.carousel"></Carousel>
+        <Products :Products="mainData.products"></Products>
+
         <Jumbotron :jumbotron="mainData.jumbotron"></Jumbotron>
         <NewRealese :newRealese="mainData.newRealese"></NewRealese>
 
