@@ -19,8 +19,8 @@ export default {
 
             <div class="new-realise-main">
                 <div class="row">
-                    <div v-for="game in newRealese.games" class="col-6 col-md-4 col-lg-2 mb-4">
-                        <img class="img-fluid rounded-5 mb-2" :src="'/img/' + game.img" alt="">
+                    <div v-for="game in newRealese.games" class="game col-6 col-md-4 col-lg-2 mb-4">
+                        <img class="img-fluid rounded-5 mb-4" :src="'/img/' + game.img" alt="">
                         <p class="fw-semibold">{{ game.title }}</p>
                     </div>
                 </div>
@@ -43,6 +43,23 @@ export default {
 
     .new-realise-main {
         padding: 0 0 2rem 0;
+
+        .game:hover {
+            cursor: pointer;
+
+            img {
+                filter: grayscale(0) !important;
+                box-shadow: 1px 1px 20px black;
+                transform: scale(1.02);
+
+                transition: transform .2s;
+            }
+
+            p {
+                text-decoration: underline;
+            }
+
+        }
     }
 }
 </style>
