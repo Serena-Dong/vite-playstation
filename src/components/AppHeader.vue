@@ -35,7 +35,7 @@ export default {
                     <div class="navbar-left col-1 col-xxl-8 d-flex">
                         <!-- Logo -->
                         <a href="">
-                            <img class="navbar-logo pt-1" :src="'/img/' + header.navbar.image" alt="">
+                            <img class="navbar-logo" :src="'/img/' + header.navbar.image" alt="">
                         </a>
                         <!-- Nav-actions -->
                         <div class="nav-actions align-items-center">
@@ -66,7 +66,7 @@ export default {
                                     </a>
                                 </li>
                                 <li>
-                                    <Button :button="header.navbar.buttons"></Button>
+                                    <Button :button="header.navbar.button"></Button>
                                 </li>
                                 <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                             </ul>
@@ -103,10 +103,14 @@ header {
 
         &,
         .nav-actions {
-            height: 80px;
+            height: 70px;
         }
 
         .navbar {
+            .navbar-logo {
+                margin-right: 1rem;
+            }
+
             .nav-actions ul>* {
                 margin-left: 15px;
             }
