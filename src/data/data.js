@@ -38,17 +38,85 @@ const headerData = {
                 url: "#"
             }
         ],
-        buttons: [
-            {
-                text: "Login",
-                color: "black",
-                url: "#"
-            }
-        ]
+        button:
+        {
+            text: "Login",
+            color: "black",
+            url: "#"
+        }
+
     },
 }
 
 const mainData = {
+    carousel: [
+        {
+            img: "jumbo-bg.png",
+            logo: "returnal-hero-banner-logo.png",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa, totam saepe veniam eum sunt omnis, in illum quisquam minus consequuntur libero id repellat? Placeat.",
+            button: {
+                text: "Acquista Ora",
+                color: "red",
+                url: "#"
+            }
+
+        },
+        {
+            img: "god-of-war.jpeg",
+            logo: "god-of-war-logo.png",
+            text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur asperiores sit veniam, sed incidunt dolor voluptates esse tenetur explicabo eum voluptatum quod accusantium eaque similique, dolorum dignissimos est neque rem?",
+            button: {
+                text: "Acquista Ora",
+                color: "red",
+                url: "#"
+            }
+
+        },
+        {
+            img: "cod-black-ops-iv.jpeg",
+            logo: "cod-black-ops-iv-logo.png",
+            text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus odio dolore magnam, consequatur incidunt enim itaque culpa laudantium. Fuga incidunt accusamus voluptatem est commodi laudantium? Harum, incidunt! Illum, ullam nostrum.",
+            button: {
+                text: "Acquista Ora",
+                color: "red",
+                url: "#"
+            }
+
+        },
+        {
+            img: "fifa-24.jpeg",
+            logo: "fifa-24-logo.png",
+            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nihil odio in illum animi dolor commodi facilis veritatis assumenda, beatae voluptatibus error, placeat, optio porro aspernatur culpa? Architecto, velit recusandae.",
+            button: {
+                text: "Acquista Ora",
+                color: "red",
+                url: "#"
+            }
+
+        },
+        {
+            img: "titanfall.jpeg",
+            logo: "titanfall-logo.png",
+            text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nostrum sapiente ipsum aliquam, nesciunt accusantium quae facilis. Temporibus, repellendus corrupti iusto nostrum laborum, rerum esse optio, iure sed molestias dolorem.",
+            button: {
+                text: "Acquista Ora",
+                color: "red",
+                url: "#"
+            }
+
+        },
+        {
+            img: "ac-unity.jpeg",
+            logo: "ac-unity-logo.png",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis id, odio animi repudiandae ratione? Quia, architecto? Molestias reiciendis aliquam assumenda similique ullam aut voluptatum, dolorem fugiat aperiam temporibus repellat.",
+            button: {
+                text: "Acquista Ora",
+                color: "red",
+                url: "#"
+            }
+
+        },
+    ],
     banners: [
         {
             order: "order-2",
