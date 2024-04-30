@@ -39,10 +39,10 @@ export default {
         <div class="container-sm">
 
             <!-- Intro -->
-            <div class="products-header text-center mb-5">
+            <div class="intro text-center">
                 <p class="text-blue text-uppercase m-0">play has not limits</p>
-                <p class="title">Ecco la PlayStaion 5</p>
-                <p>Tuffati in nuove possibilità di gioco completamente inaspettate</p>
+                <p class="title">Here is PlayStaion 5</p>
+                <p>Dive into completely unexpected new game possibilities</p>
             </div>
 
             <!-- Carousel -->
@@ -75,6 +75,11 @@ export default {
 @import "./../../assets/scss/partials/variables";
 
 .products {
+    .intro {
+        .title {
+            font-size: 2rem;
+        }
+    }
 
     .carousel {
         display: flex;
