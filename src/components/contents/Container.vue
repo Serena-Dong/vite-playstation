@@ -23,8 +23,8 @@ export default {
     <section :class="order">
         <div class="container-sm">
 
-            <!-- Text -->
-            <div class="text-center py-3">
+            <!-- Title -->
+            <div class="text-center py-5">
                 <p class="fs-1">{{ title }}</p>
                 <p>{{ intro }}
                 </p>
@@ -32,8 +32,8 @@ export default {
 
             <!-- Content -->
 
-            <!-- CARD -->
-            <div v-if="cards" id="card" class="row">
+            <!-- CARDS -->
+            <div v-if="cards" class="cards row">
                 <div v-for="card in cards" class="col-12 col-md-4 mb-4">
                     <div class="img-container">
                         <img class="img-fluid" :src="'/img/' + card.img" alt="">
@@ -44,14 +44,25 @@ export default {
                 </div>
             </div>
 
-            <!-- IMAGE -->
-            <div v-if="images" class="row">
+            <!-- IMAGES -->
+            <div v-if="images" class="row images">
                 <div v-for="image in images" class="col">
-                    <img class=" img-fluid" :src="'/img/' + image.path" alt="">
+                    <a :href="image.url">
+                        <img class=" img-fluid" :src="'/img/' + image.path" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.images {
+    margin-bottom: 2rem;
+
+    img:hover {
+        box-shadow: 1px 1px 15px #000000;
+        transition: box-shadow 0.2s;
+    }
+}
+</style>
