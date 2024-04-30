@@ -1,4 +1,4 @@
-# 🎮 PLaystation Clone Project
+# 🎮 Playstation Clone Project
 
 Welcome to the PlayStation Clone Project repository! Here, you'll find a dynamic remake of the beloved PlayStation homepage website.
 
