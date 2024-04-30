@@ -9,10 +9,10 @@ Originally developed as a static project during the Boolean course using HTML, C
 
 ## <> Features
 
-🔍 Carousel: Enjoy a fluid autoplay feature for an immersive browsing experience.
-🎤 Animations: Dive into the PlayStation universe with captivating animations across various components.
-📜 Dynamic & Reusable Code: Experience the power of Vue.js for dynamic content rendering, coupled with Sass for efficient styling and code reuse.
-🎧 Components: Explore a variety of Vue components designed for easy reuse and customization.
+- ⏭️ Carousel: Enjoy a fluid autoplay feature for an immersive browsing experience.
+- 💫 Animations: Dive into the PlayStation universe with captivating animations across various components.
+- ♻️ Dynamic & Reusable Code: Experience the power of Vue.js for dynamic content rendering, coupled with Sass for efficient styling and code reuse.
+- ⌨️ Components: Explore a variety of Vue components designed for easy reuse and customization.
 
 ## 🛠️ Technologies Used
 
