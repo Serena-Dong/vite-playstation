@@ -52,7 +52,7 @@ export default {
                 box-shadow: 1px 1px 20px black;
                 transform: scale(1.02);
 
-                transition: transform .2s;
+                transition: transform .5s;
             }
 
             p {
