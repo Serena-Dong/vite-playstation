@@ -3,7 +3,7 @@ import Jumbotron from './contents/Jumbotron.vue';
 import Banner from './contents/Banner.vue';
 import Container from './contents/Container.vue';
 import NewRealese from './contents/NewRealese.vue';
-import Carousel from './contents/Carousel.vue';
+import Games from './contents/Games.vue';
 import Products from './contents/Products.vue';
 import { createApp } from 'vue';
 import { mainData } from '../data/data';
@@ -11,7 +11,7 @@ import { mainData } from '../data/data';
 
 export default {
     name: 'AppMain',
-    components: { Jumbotron, Banner, Container, NewRealese, Carousel, Products },
+    components: { Jumbotron, Banner, Container, NewRealese, Games, Products },
     data() {
         return {
             mainData
@@ -22,8 +22,8 @@ export default {
 </script>
 <template>
     <main>
-        <Carousel :carousel="mainData.carousel"></Carousel>
-        <Products :Products="mainData.products"></Products>
+        <Games :games="mainData.carousels.games"></Games>
+        <Products :products="mainData.carousels.products"></Products>
 
         <Jumbotron :jumbotron="mainData.jumbotron"></Jumbotron>
         <NewRealese :newRealese="mainData.newRealese"></NewRealese>
