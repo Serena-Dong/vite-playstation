@@ -122,7 +122,7 @@ const mainData = {
             {
                 img: "playstation-5-thumb.png",
                 title: "Console PlayStation 5",
-                text: "Sperimenta la nuova generazione di incredibili giochi PlayStation.",
+                text: "Experience the next generation of incredible PlayStation games.",
                 buttons: [
                     {
                         text: "Find out more",
