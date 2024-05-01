@@ -1,6 +1,7 @@
 # 🎮 Playstation Clone Project
 
 Welcome to the PlayStation Clone Project repository! <br>
+
 Here, you'll find a dynamic remake of the beloved PlayStation homepage website.
 
 
@@ -24,7 +25,7 @@ Originally developed as a static project during the Boolean course using HTML, C
 - ![Static Badge](https://img.shields.io/badge/Bootstrap-purple?logo=bootstrap): For responsive and visually appealing design elements.  <br>
 - ![Static Badge](https://img.shields.io/badge/SASS-pink?logo=sass): To enhance and customize the application's styles.
 
-- ## 💻 Getting Started
+## 💻 Getting Started
 
 To run the To-Do List App on your local machine, follow these steps: <br>
 1. **Clone the Repository**: Clone this repository to your local machine: <br>
