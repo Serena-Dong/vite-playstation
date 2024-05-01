@@ -100,7 +100,7 @@ export default {
 
     .carousel-container {
         width: 100%;
-        height: 70%;
+        height: 65%;
         position: relative;
 
         .carousel-gallery {
@@ -120,7 +120,7 @@ export default {
             position: absolute;
             top: 0%;
             padding: 3rem;
-            height: 70vh;
+            height: 65vh;
 
             display: flex;
             flex-direction: column;
