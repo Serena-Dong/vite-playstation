@@ -76,6 +76,8 @@ export default {
 
 .products {
     .intro {
+        margin-bottom: 3rem;
+
         .title {
             font-size: 2rem;
         }
@@ -84,6 +86,7 @@ export default {
     .carousel {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .carousel-text {
             display: flex;
@@ -102,6 +105,7 @@ export default {
 
     .thumbnail-products {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
 
         img:hover {
