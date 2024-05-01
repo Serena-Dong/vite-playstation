@@ -4,38 +4,166 @@ const headerData = {
     },
     navbar: {
         image: "play_logo.svg",
-        links: [
+        groups: [
             {
                 name: "Games",
-                url: "#"
+                links: [
+                    {
+                        name: "PS5",
+                        url: "#"
+                    },
+                    {
+                        name: "PS4",
+                        url: "#"
+                    },
+                    {
+                        name: "PS VR2",
+                        url: "#"
+                    },
+                    {
+                        name: "PC",
+                        url: "#"
+                    },
+                    {
+                        name: "PS Plus",
+                        url: "#"
+                    },
+                ]
             },
             {
                 name: "PS5",
-                url: "#"
+                links: [
+                    {
+                        name: "Console",
+                        url: "#"
+                    },
+                    {
+                        name: "Games",
+                        url: "#"
+                    },
+                    {
+                        name: "Controllers",
+                        url: "#"
+                    },
+                    {
+                        name: "PS VR2",
+                        url: "#"
+                    },
+                    {
+                        name: "Headsets",
+                        url: "#"
+                    },
+                ]
             },
             {
                 name: "PS4",
-                url: "#"
+                links: [
+                    {
+                        name: "Console",
+                        url: "#"
+                    },
+                    {
+                        name: "Games",
+                        url: "#"
+                    },
+                    {
+                        name: "Controllers",
+                        url: "#"
+                    },
+                    {
+                        name: "Headsets",
+                        url: "#"
+                    }
+                ]
             },
             {
                 name: "Services",
-                url: "#"
+                links: [
+                    {
+                        name: "PS Plus",
+                        url: "#"
+                    },
+                    {
+                        name: "Ps Stars",
+                        url: "#"
+                    }
+                ]
             },
             {
                 name: "Accessories",
-                url: "#"
+                links: [
+                    {
+                        name: "PS5 controllers",
+                        url: "#"
+                    },
+                    {
+                        name: "Playstation Portal Remote PLayer",
+                        url: "#"
+                    },
+                    {
+                        name: "PS VR2",
+                        url: "#"
+                    },
+                    {
+                        name: "Headsets",
+                        url: "#"
+                    },
+                    {
+                        name: "All accessories",
+                        url: "#"
+                    },
+                ]
             },
             {
                 name: "News",
-                url: "#"
+                links: [
+                    {
+                        name: "PS Blog",
+                        url: "#"
+                    },
+                    {
+                        name: "This Month on Playstation",
+                        url: "#"
+                    }
+                ]
             },
             {
                 name: "Store",
-                url: "#"
+                links: [
+                    {
+                        name: "Buy consoles",
+                        url: "#"
+                    },
+                    {
+                        name: "Buy games",
+                        url: "#"
+                    },
+                    {
+                        name: "Buy accessories",
+                        url: "#"
+                    },
+                    {
+                        name: "Subscribe to PS Plus",
+                        url: "#"
+                    },
+                    {
+                        name: "Buy merchandise",
+                        url: "#"
+                    },
+                ]
             },
             {
                 name: "Supports",
-                url: "#"
+                links: [
+                    {
+                        name: "Support",
+                        url: "#"
+                    },
+                    {
+                        name: "PSN Status",
+                        url: "#"
+                    },
+                ]
             }
         ],
         button:
@@ -327,8 +455,8 @@ const mainData = {
         },
     ],
     newRealese: {
-        title: "Nuove uscite",
-        description: "Giochi incredibili per PS4 e PS5 disponibili ora",
+        title: "New Realeses",
+        description: "Amazing games for PS4 and PS5 available now",
         games: [
             {
                 title: "Tom Hakw's&trade; Pro Skater&trade; 1+2",
