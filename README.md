@@ -23,3 +23,21 @@ Originally developed as a static project during the Boolean course using HTML, C
 - ![Static Badge](https://img.shields.io/badge/JavaScript-yellow?logo=javascript): The core programming language for building the application's functionality. <br>
 - ![Static Badge](https://img.shields.io/badge/Bootstrap-purple?logo=bootstrap): For responsive and visually appealing design elements.  <br>
 - ![Static Badge](https://img.shields.io/badge/SASS-pink?logo=sass): To enhance and customize the application's styles.
+
+- ## 💻 Getting Started
+
+To run the To-Do List App on your local machine, follow these steps: <br>
+1. **Clone the Repository**: Clone this repository to your local machine: <br>
+
+2. **Install Dependencies**: Install the project dependencies using npm: <br>
+
+3. **Run the Application**: Start the development server and open the app in your browser:
+
+## 🤝 Contribution
+
+Contributions to this project are welcome. If you want to contribute new features, improve the design, or fix issues, please feel free to submit pull requests.
+
+## 📬 Contact
+
+- Developer: Serena Dong <br>
+- Email: [serenadong@outlook.it]
