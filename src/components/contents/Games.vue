@@ -132,7 +132,7 @@ export default {
 
             &>* {
                 color: $ps-white;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
                 // opacity: 0;
                 transition: opacity 0.5s ease-in-out;
             }
