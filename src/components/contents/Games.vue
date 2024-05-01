@@ -171,40 +171,38 @@ export default {
     }
 
     .thumbnail-container {
-        width: 100%;
-        height: 20%;
+        display: flex;
+        justify-content: center;
 
         #thumbnail-gallery {
             display: flex;
-            justify-content: center;
+            justify-content: start;
             flex-wrap: nowrap;
 
-            .img-container {
+            overflow: auto;
 
-                width: 205px;
-                height: 120px;
+            .img-container {
                 display: flex;
                 justify-content: center;
 
                 margin: 1.5rem 0.5rem;
 
                 img {
-                    width: 100%;
+                    width: 200px;
+                    height: 120px;
+
                     object-fit: cover;
                     border-radius: 1rem;
                     margin: 0 0.5rem;
 
                     cursor: pointer;
-                    filter: blur(0.7px);
-                    filter: grayscale(0.5);
-                    transition: filter .0.5s;
-                    transition: transform .5s;
+                    filter: blur(0.3px) grayscale(0.5);
+                    transition: filter 0.5s, transform 0.5s;
 
                     &:hover {
                         transform: scale(1.06);
                         box-shadow: 1px 1px 20px black;
-
-                        filter: blur(0) !important;
+                        filter: blur(0) grayscale(0) !important;
                     }
                 }
             }
@@ -218,8 +216,8 @@ export default {
 
     .thumb-active {
         box-shadow: 1px 1px 20px black;
+        filter: blur(0) grayscale(0) !important;
         transform: scale(1.07);
-        filter: blur(0) !important;
         border: 4px solid $ps-blue;
         padding: 3px;
     }
